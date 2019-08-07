@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REDE DE SENSOREAMENTO</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="header">
+        <h1>REDE DE SENSOREAMENTO</h1>
+    </div>
+    <p class="content" style="color: #75e090">
+        <%=nodes.length === 0 ? 'Não há sensores conectados!' : ''%>
+    </p>
+    <% nodes.forEach(function(node) { %>
+    <div class="card">
+       <div class="content">
+        <h2>ID: <%= node.id %></h2>
+        <p>Mac: <%= node.address %></p>
+        <p>Temperatura: <%= node.temperature %>°C</p>
+        <p>Umidade: <%= node.humidity %>%</p>
+       </div>
+    </div>
+    <% }); %>
+  </body>
+  <script language="javascript">
+      setTimeout(function(){
+          window.location.reload(1);
+      }, 5000);
+  </script>
+</html>

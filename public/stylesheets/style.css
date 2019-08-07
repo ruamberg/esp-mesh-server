@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  background-color: #000036;
+  color: #ffffff;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  /*display:inline;*/
+  float:left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 280px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #4AADA1;
+}
+
+.content {
+  margin-left: 15px;
+}
+
+a {
+  color: #00B7FF;
+}
